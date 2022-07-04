@@ -1,0 +1,103 @@
+body{
+    overflow: hidden;
+}
+/* head */
+.headBox{
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background: black;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.ModeBox{
+    position: absolute;
+    left: 20px;
+    font-size: 14px;
+    color: gray;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.ModeBox .active{
+    color: white;
+}
+
+/* btn */
+
+.btnBox{
+    position: fixed;
+    width: 100vw;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftBtn, .rightBtn {
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.leftBtn img,
+.rightBtn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.leftBtn{
+    margin-left: 20px;
+}
+
+.rightBtn{
+    margin-right: 20px;
+}
+
+
+/* footer */
+
+.footerBox {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background: black;
+    bottom: 0;
+    z-index: 1;
+}
+
+.chooseBox{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chooseItem{
+    border-right: 1px solid #fff;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chooseItem:last-child {
+    border-right: none;
+}
+
+.activeItem{
+    color: white;
+}
