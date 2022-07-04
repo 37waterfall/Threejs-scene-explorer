@@ -106,8 +106,8 @@ function init() {
     // model
 
     // const loader = new GLTFLoader().setPath('/gltf/');
-    const loader = new GLTFLoader().setPath('/Threejs-scene-explorer/gltf/');
-    loader.load('final-test.glb', function (gltf) {
+    const loader = new GLTFLoader();
+    loader.load('../gltf/final-test.glb', function (gltf) {
 
         scene.add(gltf.scene);
 
