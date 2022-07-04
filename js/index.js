@@ -105,7 +105,7 @@ function init() {
 
     // model
 
-    const loader = new GLTFLoader().setPath('../gltf/');
+    const loader = new GLTFLoader().setPath('/gltf/');
     loader.load('final-test.glb', function (gltf) {
 
         scene.add(gltf.scene);
